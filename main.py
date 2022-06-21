@@ -11,17 +11,30 @@ import seaborn as sns
 # df['datasq'] = df1['data'].apply(lambda x : x **2)
 # df.plot(figsize=(12,12))
 # plt.show()
+#
+# #loading Iris Data Set into dataframe and displaying it on plot
+#
+# df1= pd.DataFrame(sns.load_dataset('iris'))
+# #in case we need to plot bar garph we can create using kind parameters
+# #title will give name to the graph
+# gf= df1.plot(figsize=(10,10), title = "Iris data",kind='bar')
+# #it will set xlable of the graph
+# gf.set_xlabel("X-Axis")
+# #it will set ylabel of the Grapb
+# gf.set_ylabel("Y-Axis")
 
-#loading Iris Data Set into dataframe and displaying it on plot
+# plt.show()
 
-df1= pd.DataFrame(sns.load_dataset('iris'))
+
+
+#loading Titanic  Data Set into dataframe and displaying it on plot
+
+df1= pd.DataFrame(sns.load_dataset('titanic'))
 #in case we need to plot bar garph we can create using kind parameters
 #title will give name to the graph
-gf= df1.plot(figsize=(10,10), title = "Iris data",kind='bar')
+gf= df1.plot(figsize=(10,10), title = "titanic data",)
 #it will set xlable of the graph
 gf.set_xlabel("X-Axis")
 #it will set ylabel of the Grapb
 gf.set_ylabel("Y-Axis")
-
 plt.show()
-
