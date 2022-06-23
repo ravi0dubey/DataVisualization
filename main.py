@@ -23,7 +23,7 @@ gf1= df1.plot(figsize=(10,10), title = "Iris data",kind='bar')
 gf1.set_xlabel("X-Axis")
 
 #it will set ylabel of the Grapb
-gf.set_ylabel("Y-Axis")
+gf1.set_ylabel("Y-Axis")
 
 plt.show()
 
@@ -36,11 +36,11 @@ df2= pd.DataFrame(sns.load_dataset('titanic'))
 #title will give name to the graph
 #Legend will shown
 #style will change the graph output from bar graph to star plot
-gf= df2.plot(figsize=(10,10), title = "titanic data", legend = True, style = 'r*')
+gf2= df2.plot(figsize=(10,10), title = "titanic data", legend = True, style = 'r*')
 
 #it will set xlable of the graph
-gf.set_xlabel("X-Axis")
+gf2.set_xlabel("X-Axis")
 #it will set ylabel of the Grapb
-gf.set_ylabel("Y-Axis")
+gf2.set_ylabel("Y-Axis")
 
 plt.show()
